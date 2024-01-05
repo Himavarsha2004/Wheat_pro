@@ -88,6 +88,10 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/faqs')
+def faqs():
+    return render_template('faqs.html')
+
 @app.route('/input_csv')
 def input_csv():
     # Replace 'your_csv_file_path.csv' with the actual path to your CSV file
